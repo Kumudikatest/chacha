@@ -1,0 +1,115 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "90a52159-48db-47f5-9e1f-cbca18503f32": {
+        "id": "90a52159-48db-47f5-9e1f-cbca18503f32",
+        "parent": null,
+        "name": "chacha",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "5a32d047-deaf-4db0-9b38-1ed8d44dd715"
+        ],
+        "isRemovable": false,
+        "filePath": "chacha"
+      },
+      "5a32d047-deaf-4db0-9b38-1ed8d44dd715": {
+        "id": "5a32d047-deaf-4db0-9b38-1ed8d44dd715",
+        "parent": "90a52159-48db-47f5-9e1f-cbca18503f32",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "chacha/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1HSVendorpromoany",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "rootNode": "90a52159-48db-47f5-9e1f-cbca18503f32",
+    "openFiles": [
+      "5a32d047-deaf-4db0-9b38-1ed8d44dd715"
+    ],
+    "currentFileId": "5a32d047-deaf-4db0-9b38-1ed8d44dd715",
+    "resources": {
+      "apigusEast1HSVendorpromoany": {
+        "name": "apigusEast1HSVendorpromoany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "HS Vendor",
+          "apiId": "2owdjvd5i7",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "hfkl4vnbka",
+          "existingResources": {
+            "/promo": "3o8456",
+            "/promo/redeems": "3xd0dc",
+            "/vendor/list": "9pwxkc",
+            "/redeem": "d7xwsp",
+            "/": "hfkl4vnbka",
+            "/user": "hupuqk",
+            "/promo/list": "l5jx2m",
+            "/qr": "rcbg6a",
+            "/vendor": "wx8mtf"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/promo",
+          "resourceName": "promo",
+          "resourceId": "3o8456",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "chacha",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1574920124602
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "chacha",
+      "url": "https://github.com/Kumudikatest/chacha"
+    }
+  }
+}
